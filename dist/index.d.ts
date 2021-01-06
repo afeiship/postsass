@@ -1,7 +1,7 @@
 /**
  * @class ExampleComponent
  */
-import * as React from 'react';
+import React from 'react';
 export declare type Props = {
     text: string;
 };
