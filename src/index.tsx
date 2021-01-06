@@ -10,6 +10,6 @@ export default class ExampleComponent extends React.Component<Props> {
   render() {
     const { text } = this.props;
 
-    return <div style={{ color: 'red' }}>Hello {text}</div>;
+    return <div style={{ color: 'red' }}>Hello world. {text}</div>;
   }
 }
