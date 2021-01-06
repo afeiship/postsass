@@ -1,8 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var React = require('react');
+import { createElement, Component } from 'react';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -43,12 +39,12 @@ var ExampleComponent = /** @class */ (function (_super) {
     }
     ExampleComponent.prototype.render = function () {
         var text = this.props.text;
-        return React.createElement("div", { style: { color: 'red' } },
+        return createElement("div", { style: { color: 'red' } },
             "Hello ",
             text);
     };
     return ExampleComponent;
-}(React.Component));
+}(Component));
 
-exports.default = ExampleComponent;
-//# sourceMappingURL=index.js.map
+export default ExampleComponent;
+//# sourceMappingURL=index.es.js.map
