@@ -10,10 +10,11 @@
     "dist"
   ],
   "scripts": {
+    "dev": "start-storybook -p 6006",
+    "markdown": "node build/markdown.js",
     "build": "rollup -c",
     "test": "jest",
     "release": "release-it",
-    "storybook:start": "start-storybook -p 6006",
     "storybook:build": "build-storybook -o docs"
   },
   "jest": {
@@ -26,10 +27,14 @@
   },
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@jswork/next": "^1.0.4",
+    "@jswork/next-replace-in-file": "^1.0.0",
+    "@jswork/react-markdown-props": "^1.0.1",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",

@@ -3,10 +3,12 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
+var PropTypes = require('prop-types');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var PropTypes__default = /*#__PURE__*/_interopDefaultLegacy(PropTypes);
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -39,22 +41,44 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-/**
- * @class ExampleComponent
- */
-var ExampleComponent = /** @class */ (function (_super) {
-    __extends(ExampleComponent, _super);
-    function ExampleComponent() {
+var BoilerplateReactTsComponent = /** @class */ (function (_super) {
+    __extends(BoilerplateReactTsComponent, _super);
+    function BoilerplateReactTsComponent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    ExampleComponent.prototype.render = function () {
+    BoilerplateReactTsComponent.prototype.render = function () {
         var text = this.props.text;
         return React__default['default'].createElement("div", { style: { color: 'red' } },
             "Hello world. ",
             text);
     };
-    return ExampleComponent;
+    BoilerplateReactTsComponent.defaultProps = {
+        /**
+         * The extended className for component.
+         */
+        className: PropTypes__default['default'].string,
+        /**
+         * Default value.
+         */
+        value: PropTypes__default['default'].object,
+        /**
+         * The change handler.
+         */
+        onChange: PropTypes__default['default'].func,
+        /**
+         * If element destroyed when visible to false.
+         * In modal case:
+         * 1. set the value to true, you need not care z-index
+         * 2. If only has one modal, you can set this to false.
+         */
+        destroyable: PropTypes__default['default'].bool,
+        /**
+         * Backdrop props or not display backdrop.
+         */
+        backdrop: PropTypes__default['default'].oneOfType([PropTypes__default['default'].bool, PropTypes__default['default'].object])
+    };
+    return BoilerplateReactTsComponent;
 }(React__default['default'].Component));
 
-exports.default = ExampleComponent;
+exports.default = BoilerplateReactTsComponent;
 //# sourceMappingURL=index.js.map
