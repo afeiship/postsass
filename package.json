@@ -15,7 +15,7 @@
     "markdown": "node build/markdown.js",
     "build": "npm run clean && rollup -c",
     "test": "jest",
-    "pages": "./bin/docs.rb",
+    "pages": "github-cli -p",
     "release": "release-it",
     "storybook:build": "build-storybook -o docs"
   },
