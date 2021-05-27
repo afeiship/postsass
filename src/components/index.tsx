@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-export type Props = { className: string; value: object; onChange: Function };
+export type Props = { className?: string; value?: object; onChange?: Function };
 
 const CLASS_NAME = 'boilerplate-react-ts-component';
 
