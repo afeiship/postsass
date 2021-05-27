@@ -19,6 +19,7 @@
     "clean": "rimraf dist",
     "markdown": "node build/markdown.js",
     "build": "npm run clean && rollup -c",
+    "docs": "cd public && npm run build",
     "test": "jest",
     "pages": "github-cli -p",
     "release": "release-it"
