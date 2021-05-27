@@ -1,23 +1,27 @@
 {
   "name": "@boilerplate-scope/boilerplate-react-ts-component",
   "version": "1.0.0",
+  "private": true,
   "description": "boilerplate-react-ts-component-description",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "workspaces": [
+    ".",
+    "public"
+  ],
   "files": [
     "dist"
   ],
   "scripts": {
+    "dev": "cd public && npm run dev",
     "clean": "rimraf dist",
-    "dev": "start-storybook -p 6006",
     "markdown": "node build/markdown.js",
     "build": "npm run clean && rollup -c",
     "test": "jest",
     "pages": "github-cli -p",
-    "release": "release-it",
-    "storybook:build": "build-storybook -o docs"
+    "release": "release-it"
   },
   "jest": {
     "preset": "ts-jest",
