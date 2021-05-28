@@ -2,6 +2,7 @@ import noop from '@jswork/noop';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import filterProps from '@jswork/filter-react-props';
 
 export type Props = { className?: string; value?: object; onChange?: Function };
 
@@ -36,8 +37,10 @@ export default class BoilerplateReactTsComponent extends Component<Props> {
 
   render() {
     const { className, value, onChange, ...props } = this.props;
+    const theProps = filterProps(props);
+
     return (
-      <div data-component={CLASS_NAME} className={classNames(CLASS_NAME, className)} {...props}>
+      <div data-component={CLASS_NAME} className={classNames(CLASS_NAME, className)} {...theProps}>
         <p>
           <button
             style={{ padding: 20, width: '100%' }}
