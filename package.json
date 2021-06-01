@@ -1,7 +1,6 @@
 {
   "name": "@boilerplate-scope/boilerplate-react-ts-component",
   "version": "1.0.0",
-  "private": true,
   "description": "boilerplate-react-ts-component-description",
   "license": "MIT",
   "main": "dist/index.js",
