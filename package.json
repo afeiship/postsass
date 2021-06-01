@@ -4,6 +4,7 @@
   "description": "boilerplate-react-ts-component-description",
   "license": "MIT",
   "main": "dist/index.js",
+  "typings": "dist/main.d.ts",
   "files": [
     "dist"
   ],
