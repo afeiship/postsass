@@ -11,9 +11,6 @@
 npm install -S @boilerplate-scope/boilerplate-react-ts-component
 ```
 
-## properties
-__GENERATE_DOCS__
-
 ## usage
 1. import css
   ```scss

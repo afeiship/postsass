@@ -12,12 +12,7 @@ npm install -S @boilerplate-scope/boilerplate-react-ts-component
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-| value     | object | false    | null    | Default value.                        |
-| onChange  | func   | false    | noop    | The change handler.                   |
-
+__GENERATE_DOCS__
 
 ## usage
 1. import css
@@ -33,7 +28,7 @@ npm install -S @boilerplate-scope/boilerplate-react-ts-component
 2. import js
   ```js
   import React from 'react';
-  import BoilerplateReactTsComponent from '../@boilerplate-scope/boilerplate-react-component';
+  import BoilerplateReactTsComponent from '@boilerplate-scope/boilerplate-react-component';
   import styled from 'styled-components';
 
   const Container = styled.div`
