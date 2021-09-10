@@ -1,8 +1,6 @@
-const fs = require('fs');
-const indentString = require('indent-string');
-
-require('@jswork/next');
-require('@jswork/next-replace-in-file');
+import fs from 'fs';
+import indentString from 'indent-string';
+import '@jswork/next-replace-in-file';
 
 nx.declare({
   statics: {
@@ -20,7 +18,7 @@ nx.declare({
       const docApp = fs.readFileSync('./public/src/app.tsx').toString();
 
       nx.replaceInFile('README.md', [
-        ['__GENERATE_DAPP__', indentString(docApp, ' ', 2)],
+        ['__GENERATE_DAPP__', indentString(docApp, 2)],
         ['../../src/main', '@boilerplate-scope/boilerplate-react-component']
       ]);
     }

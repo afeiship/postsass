@@ -27,6 +27,9 @@ npm install -S @boilerplate-scope/boilerplate-react-ts-component
 __GENERATE_DAPP__
   ```
 
+## preview
+- https://afeiship.github.io/boilerplate-react-component/
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/boilerplate-react-ts-component/blob/master/LICENSE.txt).
 

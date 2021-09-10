@@ -11,9 +11,6 @@
 npm install -S @boilerplate-scope/boilerplate-react-ts-component
 ```
 
-## properties
-__GENERATE_DOCS__
-
 ## usage
 1. import css
   ```scss
@@ -45,6 +42,9 @@ __GENERATE_DOCS__
   };
 
   ```
+
+## preview
+- https://afeiship.github.io/boilerplate-react-component/
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/boilerplate-react-ts-component/blob/master/LICENSE.txt).
