@@ -14,13 +14,13 @@ npm install -S @boilerplate-scope/boilerplate-react-ts-component
 ## usage
 1. import css
   ```scss
-  @import "~@boilerplate-scope/boilerplate-react-component/dist/style.css";
+  @import "~@boilerplate-scope/boilerplate-react-ts-component/dist/style.css";
 
   // or use sass
-  @import "~@boilerplate-scope/boilerplate-react-component/dist/style.scss";
+  @import "~@boilerplate-scope/boilerplate-react-ts-component/dist/style.scss";
 
   // customize your styles:
-  $boilerplate-react-component-options: ()
+  $boilerplate-react-ts-component-options: ()
   ```
 2. import js
   ```js
@@ -28,7 +28,7 @@ __GENERATE_DAPP__
   ```
 
 ## preview
-- https://afeiship.github.io/boilerplate-react-component/
+- https://afeiship.github.io/boilerplate-react-ts-component/
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/boilerplate-react-ts-component/blob/master/LICENSE.txt).
