@@ -1,5 +1,6 @@
 {
   "name": "@boilerplate-scope/boilerplate-react-ts-component",
+  "boilerplate": "boilerplate-react-ts-component",
   "version": "1.0.0",
   "description": "boilerplate-react-ts-component-description",
   "license": "MIT",
