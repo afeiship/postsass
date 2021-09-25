@@ -44,7 +44,7 @@ npm install -S @boilerplate-scope/boilerplate-react-ts-component
   ```
 
 ## preview
-- https://afeiship.github.io/boilerplate-react-component/
+- https://afeiship.github.io/boilerplate-react-ts-component/
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/boilerplate-react-ts-component/blob/master/LICENSE.txt).
