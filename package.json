@@ -1,6 +1,6 @@
 {
   "name": "@boilerplate-scope/boilerplate-react-ts-component",
-  "boilerplate": "boilerplate-react-ts-component",
+  "boilerplate": "@boilerplate-scope/boilerplate-react-ts-component",
   "homepage": "https://js.work",
   "version": "1.0.0",
   "description": "boilerplate-react-ts-component-description",
@@ -80,5 +80,9 @@
   "publishConfig": {
     "access": "<%= registry.access %>",
     "registry": "<%= registry.publish %>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/@boilerplate-scope/boilerplate-react-ts-component"
   }
 }
