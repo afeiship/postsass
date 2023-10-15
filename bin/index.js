@@ -30,6 +30,9 @@ nx.declare({
     start() {
       const { src, dst, minify } = program;
       if (!src || !dst) return console.log('src/dst is required!');
+      const dstFoloder = path.dirname(dst);
+      if (!fs.existsSync(dstFoloder)) fs.mkdirSync(dstFoloder);
+      
       const outputStyle = minify ? 'compressed' : 'expanded';
       const sassRes = sass.compile(src, { outputStyle });
 
