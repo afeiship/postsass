@@ -1,6 +1,6 @@
 {
   "name": "@jswork/postsass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cli compiler for sass/scss via dart-sass and postcss.",
   "homepage": "https://js.work",
   "bin": {
@@ -32,10 +32,11 @@
     "gulp-replace": "^1.0.0"
   },
   "keywords": [
-    "boilerplate",
     "cli",
-    "next",
-    "nx"
+    "dart-sass",
+    "postcss",
+    "sass",
+    "scss"
   ],
   "repository": {
     "type": "git",
