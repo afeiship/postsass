@@ -15,16 +15,18 @@
   "license": "MIT",
   "dependencies": {
     "@jswork/next": "^1.0.5",
-    "@jswork/next-absolute-package": "^1.0.1",
     "@jswork/next-get-key": "^1.0.0",
-    "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "globby": "^11.1.0",
     "gulp-rename": "^2.0.0",
+    "postcss": "^8.4.31",
+    "postcss-load-config": "^4.0.1",
+    "sass": "^1.69.3",
     "yargs": "^13.2.4"
   },
   "devDependencies": {
     "del": "^6.0.0",
+    "fsevents": "2",
     "gulp": "^4.0.2",
     "gulp-load-plugins": "^2.0.5",
     "gulp-replace": "^1.0.0"
