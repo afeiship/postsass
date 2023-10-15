@@ -3,7 +3,7 @@
     "requireCleanWorkingDir": false
   },
   "hooks": {
-    "before:init": ["npm run docs"],
+    "before:init": ["npm run build"],
     "after:init": ["t2k"]
   },
   "github": {
