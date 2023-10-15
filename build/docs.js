@@ -20,6 +20,7 @@
         $.rename(function (path) {
           path.dirname = '..';
           path.basename = 'README';
+          console.log('path: ', path);
           return path;
         })
       )
