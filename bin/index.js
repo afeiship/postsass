@@ -4,11 +4,10 @@ const fs = require('fs');
 const postcss = require('postcss');
 const postcssrc = require('postcss-load-config');
 const sass = require('sass');
-
+const { version } = require('../package.json');
 // next packages:
 require('@jswork/next');
 
-const { version } = nx.absolutePackage();
 const program = new Command();
 
 program.version(version);
@@ -35,8 +34,9 @@ nx.declare({
       const sassRes = sass.compile(src, { outputStyle });
 
       postcssrc().then(({ plugins, options }) => {
+        const opts = { from: src, ...options };
         postcss(plugins)
-          .process(sassRes.css, options)
+          .process(sassRes.css, opts)
           .then((result) => {
             fs.writeFileSync(dst, result.css);
             if (result.map)
