@@ -25,9 +25,8 @@ Usage: postsass [options]
 
 Options:
   -V, --version       output the version number
-  -s, --src <string>  Sass/scss file path.
-  -d, --dst <string>  Css file path.
-  -m, --minify        Minify css.
+  -d, --debug         only show cmds, but not clean.
+  -s, --src <string>  source filepath. (default: "./src")
   -h, --help          display help for command
 ~~~
 
