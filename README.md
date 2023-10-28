@@ -6,6 +6,8 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
+![snapshot](https://tva1.sinaimg.cn/large/0081Kckwgy1gk87ynhkbaj30u60asasp.jpg)
+
 ## installation
 ```shell
 # public
@@ -25,6 +27,7 @@ Options:
   -V, --version       output the version number
   -s, --src <string>  Sass/scss file path.
   -d, --dst <string>  Css file path.
+  -c, --copy          Copy original src to dst.
   -m, --minify        Minify css.
   -h, --help          display help for command
 ~~~
