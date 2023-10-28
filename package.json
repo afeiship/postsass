@@ -1,6 +1,6 @@
 {
   "name": "@jswork/postsass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cli compiler for sass/scss via dart-sass and postcss.",
   "homepage": "https://js.work",
   "bin": {
