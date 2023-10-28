@@ -17,7 +17,7 @@ program
   .option('-s, --src <string>', 'Sass/scss file path.')
   .option('-d, --dst <string>', 'Css file path.')
   .option('-c, --copy', 'Copy original src to dst.')
-  .option('-a, --sass', 'Is sass file.')
+  .option('-a, --is-sass', 'Is sass file.')
   .option('-m, --minify', 'Minify css.')
   .parse(process.argv);
 
@@ -31,10 +31,10 @@ nx.declare({
   methods: {
     init() {},
     start() {
-      const { src, dst, copy, minify, sass } = program;
+      const { src, dst, copy, minify, isSass } = program;
       if (!src || !dst) return console.log('src/dst is required!');
       const dstFoloder = path.dirname(dst);
-      const srcExt = sass ? '.sass' : '.scss';
+      const srcExt = isSass ? '.sass' : '.scss';
       const distSass = dst.replace(/\.css$/, srcExt);
 
       if (!fs.existsSync(dstFoloder)) fs.mkdirSync(dstFoloder);
