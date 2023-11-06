@@ -26,6 +26,7 @@
     "yargs": "^13.2.4"
   },
   "devDependencies": {
+    "@jswork/next-absolute-package": "^1.0.1",
     "del": "^6.0.0",
     "fsevents": "2",
     "gulp": "^4.0.2",
