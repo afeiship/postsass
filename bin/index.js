@@ -20,6 +20,7 @@ program
   .option('-c, --copy', 'Copy original src to dst.')
   .option('-a, --is-sass', 'Is sass file.')
   .option('-m, --minify', 'Minify css.')
+  .option('-l, --load-paths', 'Load path.')
   .parse(process.argv);
 
 nx.declare({
@@ -32,7 +33,7 @@ nx.declare({
   methods: {
     init() {},
     start() {
-      const { src, dst, copy, minify, isSass } = program;
+      const { src, dst, copy, minify, isSass, loadPaths } = program;
       if (!src || !dst) return console.log('src/dst is required!');
       const dstFoloder = path.dirname(dst);
       const srcExt = isSass ? '.sass' : '.scss';
@@ -43,11 +44,11 @@ nx.declare({
       const outputStyle = minify ? 'compressed' : 'expanded';
       const projectGit = findup('.git');
       const projectRoot = path.dirname(projectGit);
+      const paths = loadPaths
+        ? loadPaths.split(',')
+        : [path.join(projectRoot, 'node_modules')];
       // add node_modules to loadPaths
-      const sassRes = sass.compile(src, {
-        outputStyle,
-        loadPaths: [path.join(projectRoot, 'node_modules')]
-      });
+      const sassRes = sass.compile(src, { outputStyle, loadPaths: paths });
 
       if (copy) fs.copyFileSync(src, distSass);
 
