@@ -6,8 +6,6 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
-![snapshot](https://tva1.sinaimg.cn/large/0081Kckwgy1gk87ynhkbaj30u60asasp.jpg)
-
 ## installation
 ```shell
 # public
@@ -28,6 +26,7 @@ Options:
   -s, --src <string>  Sass/scss file path.
   -d, --dst <string>  Css file path.
   -c, --copy          Copy original src to dst.
+  -a, --is-sass       Is sass file.
   -m, --minify        Minify css.
   -h, --help          display help for command
 ~~~
