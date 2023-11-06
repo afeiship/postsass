@@ -5,6 +5,7 @@ const path = require('path');
 const postcss = require('postcss');
 const postcssrc = require('postcss-load-config');
 const sass = require('sass');
+const findup = require('findup-sync');
 const { version } = require('../package.json');
 // next packages:
 require('@jswork/next');
@@ -40,7 +41,13 @@ nx.declare({
       if (!fs.existsSync(dstFoloder)) fs.mkdirSync(dstFoloder);
 
       const outputStyle = minify ? 'compressed' : 'expanded';
-      const sassRes = sass.compile(src, { outputStyle });
+      const projectGit = findup('.git');
+      const projectRoot = path.dirname(projectGit);
+      // add node_modules to loadPaths
+      const sassRes = sass.compile(src, {
+        outputStyle,
+        loadPaths: [path.join(projectRoot, 'node_modules')]
+      });
 
       if (copy) fs.copyFileSync(src, distSass);
 
