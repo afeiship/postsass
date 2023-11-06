@@ -57,8 +57,9 @@ nx.declare({
           .process(sassRes.css, opts)
           .then((result) => {
             fs.writeFileSync(dst, result.css);
-            if (result.map)
+            if (result.map) {
               fs.writeFileSync(dst + '.map', JSON.stringify(result.map));
+            }
           });
       });
     }

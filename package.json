@@ -17,7 +17,7 @@
     "@jswork/next": "^1.0.5",
     "@jswork/next-get-key": "^1.0.0",
     "commander": "^6.2.0",
-    "find-up": "^6.3.0",
+    "findup-sync": "^5.0.0",
     "globby": "^11.1.0",
     "gulp-rename": "^2.0.0",
     "postcss": "^8.4.31",
