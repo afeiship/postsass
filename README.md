@@ -28,6 +28,7 @@ Options:
   -c, --copy          Copy original src to dst.
   -a, --is-sass       Is sass file.
   -m, --minify        Minify css.
+  -l, --load-paths    Load path.
   -h, --help          display help for command
 ~~~
 
