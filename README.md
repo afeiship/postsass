@@ -14,6 +14,7 @@ npm i -g @jswork/postsass
 # private
 git clone https://github.com/afeiship/postsass.git
 cd postsass
+# 这一步可能报错，用 yarn 安装即可跳过这个问题
 npm i && npm link
 ```
 
