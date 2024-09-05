@@ -14,7 +14,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@jswork/next": "^1.0.5",
+    "@jswork/next": "^1.2.6",
     "@jswork/next-get-key": "^1.0.0",
     "commander": "^6.2.0",
     "findup-sync": "^5.0.0",
